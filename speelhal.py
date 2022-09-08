@@ -1,5 +1,5 @@
 toegangsticketPerPersoon = 7.45
-aantalPersonen = 3
+aantalPersonen = 4
 toegangTotaal = toegangsticketPerPersoon * aantalPersonen
 
 vipSeatTijd = 45 / 5
@@ -9,4 +9,4 @@ vipseatTotaal = vipseatPerPersoon * aantalPersonen
 
 totaalPrijs = toegangTotaal + vipseatTotaal 
 
-print(totaalPrijs)
+print('Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar', totaalPrijs, 'euro')
