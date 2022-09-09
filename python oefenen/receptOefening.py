@@ -23,9 +23,14 @@ wittewijnAzijn = aantalKomkommers * azijnperkomkommer
 olieperkomkommer = 3
 olijfolie = aantalKomkommers * olieperkomkommer
 
-print('Hoeveel mespuntjes zeezout heb je nodig:', mespuntZeezout)
-print('Hoeveel tenen knoflook heb je nodig:', tenenKnoflook)
-print('Hoeveel gram verse dille heb je nodig:', verseDille)
-print('Hoeveel gram griekse yoghurt heb je nodig:', griekseYoghurt)
-print('Hoeveel eetlepels witte wijn azijn heb je nodig:', wittewijnAzijn)
-print('Hoeveel eetlepels olijfolie heb je nodig:', olijfolie)
+print(f""" 
+Dit zijn de ingrediënten die u nodig heeft voor dit recept:
+                  - {mespuntZeezout} mespunten zeezout
+                  - {tenenKnoflook} tenen knoflook
+                  - {verseDille} gram verse dille
+                  - {griekseYoghurt} gram griekse yoghurt
+                  - {wittewijnAzijn} eetlepels witte wijn azijn
+                  - {olijfolie} eetlepels olijfolie
+
+Dit recept is voor {aantalKomkommers} personen
+""")
