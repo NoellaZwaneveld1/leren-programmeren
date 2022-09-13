@@ -21,11 +21,8 @@ if vraag1_ervaring == 'dieren-dresuur':
 
     ervaringDresuur = input()
 
-    if int(ervaringDresuur) < 4:
+    if int(ervaringDresuur) <= 4:
          score = score + 0         
-    
-    elif int(ervaringDresuur) == 4:
-         score = score + 0
 
     elif int(ervaringDresuur) > 4:
          score = score + 1
@@ -36,10 +33,7 @@ if vraag1_ervaring == 'jongleren':
 
     ervaringJongleren = input()
 
-    if int(ervaringJongleren) < 5:
-         score = score + 0
-    
-    elif int(ervaringJongleren) == 5:
+    if int(ervaringJongleren) <= 5:
          score = score + 0
 
     elif int(ervaringJongleren) > 5: 
@@ -51,10 +45,7 @@ if vraag1_ervaring == 'acrobatiek':
 
     ervaringAcrobatiek = input()
 
-    if int(ervaringAcrobatiek) < 3:
-         score = score + 0
-
-    elif int(ervaringAcrobatiek) == 3:
+    if int(ervaringAcrobatiek) <= 3:
          score = score + 0
 
     elif int(ervaringAcrobatiek) > 3:
@@ -108,10 +99,7 @@ if vraag5_manOfVrouw == 'man':
 
      vraag7_breedte = input('Hoe breedt is uw snor in centimeters? ')
 
-     if int(vraag7_breedte) < 10:
-         score = score + 0
-
-     elif int(vraag7_breedte) == 10:
+     if int(vraag7_breedte) <= 10:
          score = score + 0
     
      elif int(vraag7_breedte) > 10:
@@ -127,10 +115,7 @@ if vraag5_manOfVrouw == 'vrouw':
 
          vraag7_lengte = input('Hoe lang is uw haar in centimeters? ')
 
-         if int(vraag7_lengte) < 20:
-             score = score + 0
-         
-         elif int(vraag7_lengte) == 20:
+         if int(vraag7_lengte) <= 20:
              score = score + 0
         
          elif int(vraag7_lengte) > 20:
@@ -142,10 +127,7 @@ if vraag5_manOfVrouw == 'vrouw':
 
 vraag8_lengte = input('Hoelang bent u in centimeters? ')
 
-if int(vraag8_lengte) < 150:
-     score = score + 0
-
-elif int(vraag8_lengte) == 150:
+if int(vraag8_lengte) <= 150:
      score = score + 0
 
 elif int(vraag8_lengte) > 150:
@@ -153,10 +135,7 @@ elif int(vraag8_lengte) > 150:
 
 vraag9_gewicht = input('Hoe zwaar bent u in kg? ')
 
-if int(vraag9_gewicht) < 90:
-     score = score + 0
-
-elif int(vraag9_gewicht) == 90:
+if int(vraag9_gewicht) <= 90:
      score = score + 0
 
 elif int(vraag9_gewicht) > 90:
