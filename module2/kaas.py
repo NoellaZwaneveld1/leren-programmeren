@@ -9,15 +9,24 @@ if vraag1_kleur == 'nee':
      vraag2_schimmel = input()
 
      if vraag2_schimmel == 'nee':
-         print('Mozarella')
+         print('Heeft de kaas een korst? ')
+
+         vraag4_korst1 = input()
+
+         if vraag4_korst1 == 'nee':
+            print('Mozarella')
+
+         if vraag4_korst1 == 'ja':
+            print('Camembert')
+            
      elif vraag2_schimmel == 'ja':
          print('Heeft de kaas een korst?')
 
-         vraag4_korst = input()
+         vraag4_korst2 = input()
 
-         if vraag4_korst == 'nee':
+         if vraag4_korst2 == 'nee':
             print('Foume d Ambert')
-         elif vraag4_korst == 'ja':
+         elif vraag4_korst2 == 'ja':
             print('Blue de Rochbaron')
 
 elif vraag1_kleur == 'ja':
