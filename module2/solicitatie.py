@@ -15,8 +15,14 @@ score = 0
 
 if vraag1_ervaring == 'nee': 
     score = score + 0
+    
+print ('Hoeveel jaar praktijk ervaring heeft u daar in? ')
 
-if vraag1_ervaring == 'dieren-dresuur':
+ervaring = input()
+
+if ((vraag1_ervaring == 'dieren-dresuur') and (int(ervaring) > 4)) or ():
+
+
     print ('Hoeveel jaar praktijk ervaring heeft u in dieren-dresuur? ')
 
     ervaringDresuur = input()
@@ -154,6 +160,11 @@ if score < 9:
      print('Helaas, u bent niet geschikt voor deze positie')
      exit() 
 
+if (int(vraag7_lengte) > 20) and (vraag10_certificaat == 'ja') :
+    print('Gefeliciteerd, u komt in aanmerking voor een solicitatie gesprek. Stuur snel uw cv!')
+    exit()
+    
+    
 if score == 9:
     print('Gefeliciteerd, u komt in aanmerking voor een solicitatie gesprek. Stuur snel uw cv!')
     exit()

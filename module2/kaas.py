@@ -18,7 +18,7 @@ if vraag1_kleur == 'nee':
 
          if vraag4_korst1 == 'ja':
             print('Camembert')
-            
+
      elif vraag2_schimmel == 'ja':
          print('Heeft de kaas een korst?')
 
@@ -26,6 +26,7 @@ if vraag1_kleur == 'nee':
 
          if vraag4_korst2 == 'nee':
             print('Foume d Ambert')
+            
          elif vraag4_korst2 == 'ja':
             print('Blue de Rochbaron')
 
