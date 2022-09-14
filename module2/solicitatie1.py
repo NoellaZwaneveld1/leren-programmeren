@@ -5,9 +5,9 @@ Als blijkt dat u aan de criteria voldoet dan komt u in aanmerking voor een solic
 Hier komen de vragen, veel succes!!!
 """)
 
-ervaring= (input('Heeft u praktijk ervaring in Dieren-dresuur, jongleren of acrobatiek? j/n ')) 
+ervaring= (input('Heeft u praktijk ervaring in Dieren-dresuur, jongleren of acrobatiek? ')) 
 
-if ervaring == 'j': 
+if (ervaring == 'ja'): 
      soort_ervaring = int(input("""Waar heeft u ervaring in?
                     1: dieren-dresuur
                     2: jongleren
@@ -16,13 +16,10 @@ if ervaring == 'j':
 
      jaren_ervaring = input('Hoeveel jaar praktijk ervaring heeft u daar in? ')
 
-     if ((soort_ervaring == 1) and (int(jaren_ervaring) > 4)) or ((soort_ervaring == 2) and (int(jaren_ervaring) > 5)) or ((soort_ervaring == 3) and (int(jaren_ervaring) > 3)):
+     if ((soort_ervaring == 1) and (int(jaren_ervaring) > 4)) or ((soort_ervaring == 2) and (int(ervaring) > 5)) or ((soort_ervaring == 3) and (int(ervaring) > 3)):
       ervaring = True 
 
-elif (ervaring == 'n'):
-    raise NameError('Je moet ervaring hebben voor deze baan, Helaas')
-
-vraag2_diploma = input('Heeft u een MBO diploma in ondernemen? j/n ')
+vraag2_diploma = input('Heeft u een MBO diploma in ondernemen? ')
 
 if vraag2_diploma == 'j':
      print('Welk niveau diploma heeft u? ')
@@ -32,23 +29,20 @@ if vraag2_diploma == 'j':
      if int(vraag3_niveau) == 4:
          pass
 
-vraag3_vrachtwagen = input('Heeft u een geldig vrachtwagen rijbewijs? j/n ')
+vraag3_vrachtwagen = input('Heeft u een geldig vrachtwagen rijbewijs? ')
 
 if vraag3_vrachtwagen == 'j':
      pass
 
-vraag4_hoed = input('Heeft u een hoge hoed? j/n ')
+vraag4_hoed = input('Heeft u een hoge hoed? ')
 
 if vraag4_hoed == 'j':
      pass
 
-elif vraag4_hoed == 'n':
-    raise NameError('Jammer, je heb een mooie hoge hoed nodig voor deze baan!!!')
-
 vraag5_manOfVrouw = input('Bent u een man of een vrouw? ')
 
 if vraag5_manOfVrouw == 'man': 
-     print('Heeft u een snor j/n ')
+     print('Heeft u een snor' )
 
      vraag6_snor = input()
 
@@ -61,22 +55,19 @@ if vraag5_manOfVrouw == 'man':
              pass
 
 if vraag5_manOfVrouw == 'vrouw':
-     print('Heeft u rood krulhaar? j/n ')
+     print('Heeft u rood krulhaar? ')
 
      vraag6_krulhaar = input()
 
      if vraag6_krulhaar == 'j':
          pass
-    
+
          vraag7_lengte = input('Hoe lang is uw haar in centimeters? ')
         
          if int(vraag7_lengte) > 20:
              pass
 
-     elif vraag6_krulhaar == 'n':
-        raise NameError('Je MOET mooi lang krulhaar hebben voor deze baan')
-
-if ((vraag5_manOfVrouw == 'man') and (vraag6_snor == 'j') and (vraag7_breedte > 10)) or ((vraag5_manOfVrouw == 'vrouw') and (vraag6_krulhaar == 'j') and (int(vraag7_lengte) > 20)):
+if ((vraag5_manOfVrouw == 'man') and (vraag6_snor == 'ja') and (vraag7_breedte > 10)) or ((vraag5_manOfVrouw == 'vrouw') and (vraag6_krulhaar == 'ja') and (int(vraag7_lengte) > 20)):
     vraag5_manOfVrouw = True
 
 vraag8_lengte = input('Hoelang bent u in centimeters? ')
