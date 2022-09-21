@@ -16,7 +16,7 @@ if (ervaring == 'ja'):
 
      jaren_ervaring = input('Hoeveel jaar praktijk ervaring heeft u daar in? ')
 
-     if ((soort_ervaring == 1) and (int(jaren_ervaring) > 4)) or ((soort_ervaring == 2) and (int(ervaring) > 5)) or ((soort_ervaring == 3) and (int(ervaring) > 3)):
+     if ((soort_ervaring == 1) and (int(jaren_ervaring) > 4)) or ((soort_ervaring == 2) and (int(jaren_ervaring) > 5)) or ((soort_ervaring == 3) and (int(jaren_ervaring) > 3)):
       ervaring = True 
 
 vraag2_diploma = input('Heeft u een MBO diploma in ondernemen? ')
