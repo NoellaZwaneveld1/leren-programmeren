@@ -3,7 +3,6 @@ iphonePrijs = int(input('Hoe duur is de Iphone in euros?'))
 samsungPrijs = int(input('Hoe duur is de Samsung in euros?'))
 
 if iphonePrijs > 900 and samsungPrijs > 900:
-    
     if iphonePrijs > samsungPrijs:
         print(f""" 
             De Samsung is het goedkoopst, de telefoon kost: {samsungPrijs} Euro
