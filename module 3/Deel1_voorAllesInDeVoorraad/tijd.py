@@ -1,5 +1,10 @@
-for x in range(1, 13):
-    print(x, 'AM')
+ochtendtijd = 1
+ochtendRange = range(1, 13)
+middagtijd = 1
+middagRange = range(1, 13)
 
-for y in range(1, 13):
-    print(y, 'PM')
+for ochtendtijd in ochtendRange:
+    print(ochtendtijd, 'AM')
+
+for middagtijd in middagRange:
+    print(middagtijd, 'PM')
