@@ -26,14 +26,10 @@ robotArm.grab()
 robotArm.moveRight()
 robotArm.drop()
 
-robotArm.moveRight()
-robotArm.grab()
-robotArm.moveLeft()
-robotArm.drop()
-
-robotArm.moveRight()
-robotArm.grab()
-robotArm.moveLeft()
-robotArm.drop()
+for x in range(0,2):
+    robotArm.moveRight()
+    robotArm.grab()
+    robotArm.moveLeft()
+    robotArm.drop()
 
 robotArm.wait()

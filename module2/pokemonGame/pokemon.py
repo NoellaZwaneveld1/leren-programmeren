@@ -10,7 +10,7 @@ def delay_print(s):
         sys.stdout.flush()
         time.sleep(0.04)
 
-delay_print ('WHat is your name? ')
+delay_print ('What is your name? ')
 
 trainerName = input()
 
