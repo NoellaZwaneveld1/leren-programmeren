@@ -1,3 +1,4 @@
+#opdracht 1 met for loop
 # startLancering = 30
 # lancering = range(30, -1, -1) #telt terug vanaf 30 met een stap van 1
 
@@ -6,6 +7,7 @@
 #     if startLancering <= 0:
 #         print ('De raket is gelanceerd')
 
+#opdracht 2 met while loop
 startLancering = 30
 
 while startLancering > 0:
