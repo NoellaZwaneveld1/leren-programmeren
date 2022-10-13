@@ -28,9 +28,9 @@ betonPrijsTotaal = betonPrijs * inhoudZwembad
 totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal + betonPrijsTotaal, 2) 
 
 print(f"""Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: {inhoudZwembad} m3)
-Uitgraven:         €{uitgravenPrijs}
-Afvoeren grond:    €{afvoerenPrijs}
-VoorrijKosten:     €{voorrijKostenTotaal}
-beton + tegel:     €{betonPrijsTotaal}
-Totaal:            €{totaal}
+Uitgraven:                   €{uitgravenPrijs}
+Afvoeren grond:              €{afvoerenPrijs}
+VoorrijKosten:               €{voorrijKostenTotaal}
+beton + tegel ({oppervlakteZwembad} m2):     €{betonPrijsTotaal}
+Totaal:                      €{totaal}
 """)
