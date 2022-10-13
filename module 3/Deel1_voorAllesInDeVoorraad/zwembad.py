@@ -3,6 +3,7 @@ breedte = float(input('Hoe breed is het zwembad? '))
 hoogte = float(input('Hoe diep is het Zwembad? '))
 
 inhoudZwembad = round(lengte * breedte * hoogte, 2)
+oppervlakteZwembad = round(lengte * breedte, 2)
 
 uitgraven = 25
 uitgravenPrijs = uitgraven * inhoudZwembad
