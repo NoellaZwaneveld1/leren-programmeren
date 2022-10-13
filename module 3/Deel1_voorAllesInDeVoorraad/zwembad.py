@@ -16,12 +16,20 @@ aantalKm = 60
 PrijsPerKmTotaal = prijsPerKm * aantalKm
 voorrijKostenTotaal = round(voorrijKosten + PrijsPerKmTotaal, 2)
 
+if inhoudZwembad < 20:
+    betonPrijs = 250
 
-totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal, 2) 
+else:
+    betonPrijs = 200
+
+betonPrijsTotaal = betonPrijs * inhoudZwembad
+
+totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal + betonPrijsTotaal, 2) 
 
 print(f"""Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: {inhoudZwembad} m3)
 Uitgraven:         €{uitgravenPrijs}
 Afvoeren grond:    €{afvoerenPrijs}
 VoorrijKosten:     €{voorrijKostenTotaal}
+beton + tegel:     €{betonPrijsTotaal}
 Totaal:            €{totaal}
 """)
