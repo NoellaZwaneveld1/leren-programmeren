@@ -5,17 +5,10 @@ hoogte = float(input('Hoe diep is het Zwembad? '))
 inhoudZwembad = round(lengte * breedte * hoogte, 2)
 oppervlakteZwembad = round(lengte * breedte, 2)
 
-uitgraven = 25
-uitgravenPrijs = uitgraven * inhoudZwembad
-
-afvoeren = 32.50 
-afvoerenPrijs = afvoeren * inhoudZwembad
-
-voorrijKosten = 250
-prijsPerKm = 2.05
-aantalKm = 60
-PrijsPerKmTotaal = round(prijsPerKm * aantalKm, 2)
-voorrijKostenTotaal = round(voorrijKosten + PrijsPerKmTotaal, 2)
+uitgravenPrijs = 25 * inhoudZwembad
+afvoerenPrijs = 32.50 * inhoudZwembad
+PrijsPerKmTotaal = round(2.05 * 60, 2)
+voorrijKostenTotaal = round(250 + PrijsPerKmTotaal, 2)
 
 if inhoudZwembad < 20:
     betonPrijs = 250
