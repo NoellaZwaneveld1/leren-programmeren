@@ -1,6 +1,6 @@
-lengte = 8
-breedte = 3
-hoogte = 1.5
+lengte = float(input('Hoelang is het zwembad?' ))
+breedte = float(input('Hoe breed is het zwembad? '))
+hoogte = float(input('Hoe diep is het Zwembad? '))
 
 inhoudZwembad = round(lengte * breedte * hoogte, 2)
 
