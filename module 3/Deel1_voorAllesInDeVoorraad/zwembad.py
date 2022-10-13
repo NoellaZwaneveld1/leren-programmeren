@@ -10,10 +10,18 @@ uitgravenPrijs = uitgraven * inhoudZwembad
 afvoeren = 32.50 
 afvoerenPrijs = afvoeren * inhoudZwembad
 
-totaal = round(uitgravenPrijs + afvoerenPrijs, 2) 
+voorrijKosten = 250
+prijsPerKm = 2.05
+aantalKm = 60
+PrijsPerKmTotaal = prijsPerKm * aantalKm
+voorrijKostenTotaal = round(voorrijKosten + PrijsPerKmTotaal, 2)
+
+
+totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal, 2) 
 
 print(f"""Offerte voor een zwembad van 8 bij 3 bij 1,5 meter (inhoud: {inhoudZwembad} m3)
 Uitgraven:         €{uitgravenPrijs}
 Afvoeren grond:    €{afvoerenPrijs}
+VoorrijKosten:     €{voorrijKostenTotaal}
 Totaal:            €{totaal}
 """)
