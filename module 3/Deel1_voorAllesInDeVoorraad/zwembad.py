@@ -14,7 +14,7 @@ afvoerenPrijs = afvoeren * inhoudZwembad
 voorrijKosten = 250
 prijsPerKm = 2.05
 aantalKm = 60
-PrijsPerKmTotaal = prijsPerKm * aantalKm
+PrijsPerKmTotaal = round(prijsPerKm * aantalKm, 2)
 voorrijKostenTotaal = round(voorrijKosten + PrijsPerKmTotaal, 2)
 
 if inhoudZwembad < 20:
@@ -23,7 +23,7 @@ if inhoudZwembad < 20:
 else:
     betonPrijs = 200
 
-betonPrijsTotaal = betonPrijs * inhoudZwembad
+betonPrijsTotaal = round(betonPrijs * inhoudZwembad, 2)
 
 totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal + betonPrijsTotaal, 2) 
 
