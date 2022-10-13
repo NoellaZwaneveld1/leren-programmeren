@@ -10,13 +10,29 @@ afvoerenPrijs = 32.50 * inhoudZwembad
 PrijsPerKmTotaal = round(2.05 * 60, 2)
 voorrijKostenTotaal = round(250 + PrijsPerKmTotaal, 2)
 
-if inhoudZwembad < 20:
-    betonPrijs = 250
+kleur = int(input("""Welke kleur tegels wilt u?
+1] Standaard
+2] Rood
+3] Kleur naar keuze 
+"""))
 
-else:
-    betonPrijs = 200
+if inhoudZwembad <= 20:
+    if kleur == 1:
+        betonPrijs = 250
+    elif kleur == 2:
+        betonPrijs = 250 + 25
+    else:
+        betonPrijs = 250 + 100
+     
+elif inhoudZwembad > 20:
+    if kleur == 1:
+        betonPrijs = 200
+    elif kleur == 2:
+        betonPrijs = 250 + 20
+    else:
+        betonPrijs = 250 + 125
 
-betonPrijsTotaal = round(betonPrijs * inhoudZwembad, 2)
+betonPrijsTotaal = round(betonPrijs * oppervlakteZwembad, 2)
 
 totaal = round(uitgravenPrijs + afvoerenPrijs + voorrijKostenTotaal + betonPrijsTotaal, 2) 
 
