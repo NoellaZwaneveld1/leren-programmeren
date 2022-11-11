@@ -1,9 +1,9 @@
 import random
-
+AANTAL_RONDE = 20
 ronde = 0
 punten = 0
 
-while ronde < 20:
+while ronde < AANTAL_RONDE:
     getal = random.randint(1, 1000)
     print("""Dit programma kiest een random getal tussen de 0 en 1000. Probeer dit getal te raden, je hebt 10 pogingen.
     """)
@@ -34,5 +34,5 @@ while ronde < 20:
         ronde10 = input("U heeft nu 10 rondes gehad. Wilt u nog verder?")#als je 10 rondes heb gehad vraagt het programma of je nog door wil
         if ronde10 == "nee":
             exit()#als je nee zegt dan stopt het programma, anders gaat hij verder
-    elif ronde == 20:
+    elif ronde == AANTAL_RONDE:
         print(f"Je heb nu 20 rondes gespeeld. je totale score is: {punten}.") #laat zien wat je totale score is
