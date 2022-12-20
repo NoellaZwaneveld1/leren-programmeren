@@ -5,7 +5,7 @@ zakMnM = {}
 
 while True: #zorgt dat je een nummer in moet vullen
     try:
-        aantalMnM = int( input("Hoeveel m&m's zitten in de zak: "))
+        aantalMnM = int(input("Hoeveel m&m's zitten in de zak: "))
         break
     except:
         print("Voer een nummer in aub!")
