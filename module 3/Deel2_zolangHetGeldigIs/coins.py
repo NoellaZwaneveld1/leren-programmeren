@@ -77,4 +77,4 @@ print(f""" Amount of change returned:
 if change > 0: #als de change groter is dan 0 laat hij zien hoeveel centen er niet zijn teruggegeven.
   print('Change not returned: ', str(change) + ' cents')
 else:
-  print('done')
+  print('All change has been returned')
