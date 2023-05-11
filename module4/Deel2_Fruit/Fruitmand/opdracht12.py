@@ -16,15 +16,23 @@ for fruit in fruitmand:
 
 gewicht_fruit /= 1000
 
-if kleur_fruit == 'yellow':
-    kleur_fruit = 'geele'
-if kleur_fruit == 'green':
-    kleur_fruit = 'groene'
-if kleur_fruit == 'orange':
-    kleur_fruit = 'oranje'
-if kleur_fruit == 'red':
-    kleur_fruit = 'roode'
-if kleur_fruit == 'brown':
-    kleur_fruit = 'bruine'
+kleuren_fruit = {
+    'yellow' : 'geele',
+    'green' : 'groene',
+    'orange' : 'oranje',
+    'red' : 'roode',
+    'brown' : 'bruine'
+}
 
-print(f"De {naam_fruit} ({lengte_fruitnaam} letters) heeft een {kleur_fruit} kleur en een gewicht van {gewicht_fruit}KG")
+# if kleur_fruit == 'yellow':
+#     kleur_fruit = 'geele'
+# if kleur_fruit == 'green':
+#     kleur_fruit = 'groene'
+# if kleur_fruit == 'orange':
+#     kleur_fruit = 'oranje'
+# if kleur_fruit == 'red':
+#     kleur_fruit = 'roode'
+# if kleur_fruit == 'brown':
+#     kleur_fruit = 'bruine'
+
+print(f"De {naam_fruit} ({lengte_fruitnaam} letters) heeft een {kleuren_fruit[kleur_fruit]} kleur en een gewicht van {gewicht_fruit}KG")
