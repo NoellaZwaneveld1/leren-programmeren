@@ -24,15 +24,4 @@ kleuren_fruit = {
     'brown' : 'bruine'
 }
 
-# if kleur_fruit == 'yellow':
-#     kleur_fruit = 'geele'
-# if kleur_fruit == 'green':
-#     kleur_fruit = 'groene'
-# if kleur_fruit == 'orange':
-#     kleur_fruit = 'oranje'
-# if kleur_fruit == 'red':
-#     kleur_fruit = 'roode'
-# if kleur_fruit == 'brown':
-#     kleur_fruit = 'bruine'
-
 print(f"De {naam_fruit} ({lengte_fruitnaam} letters) heeft een {kleuren_fruit[kleur_fruit]} kleur en een gewicht van {gewicht_fruit}KG")
